@@ -1,0 +1,114 @@
+body{
+    background-color:black;
+    padding:0;
+    margin:0;
+}
+
+button{
+    cursor:pointer
+}
+#total-area{
+    position:fixed;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:#fff
+}
+
+#title{
+    color:#ccc;
+    font-family: "Micro 5 Charted", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:50px;
+  margin-top:20px;
+}
+#score-area{
+    display:flex;
+    justify-content: space-between;
+    width:50%;
+}
+.score{
+    width:150px;
+    height:40px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#player-score{
+    border:2px solid #0b0eec
+}
+#npc-score{
+    border:2px solid #fc0303
+}
+
+.icons{
+    width:120px;
+    visibility: hidden
+}
+
+#message{
+    font-family: "Micro 5 Charted", sans-serif;
+    font-size:30px;
+    visibility: hidden;
+}
+
+#player-area{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+#player-controls{
+    width:350px;
+    display:flex;
+    justify-content: space-between;
+    margin-top:10px;
+}
+
+.player-buttons{
+    font-weight: 700;
+    width:30%;
+    height:30px;
+}
+
+#clear{
+    font-weight: 700;
+    width:80px;
+    height:40px;
+    margin-top:10px;
+    background-color:#000;
+    border:1px solid blue;
+    color:#0b0eec;
+}
+#clear:hover{
+    border:1px solid yellow;
+    color:yellow
+}
+
+@media (max-width:768px){
+    #title{
+        text-align:center;
+        font-size:40px
+    }
+
+    #score-area{
+        width:80%;
+    }
+    .icons{
+        width:100px;
+    }
+    #player-controls{
+        width:18.75rem;
+    }
+    .player-buttons{
+        width:80px;
+        height:30px;
+    }
+    #message{
+        font-size:30px;
+    }
+}
